@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3</title>
+    <link rel="stylesheet" href="level-3.css">
+</head>
+<body>
+    <canvas></canvas>
+    
+    <div class="fail-display">
+        <div class="game-over-container">
+            <h2 class="game-over-message">Mission Failed</h2>
+            <div class="button-container">
+                <a href="index.html">
+                    <button class="Quit">Quit</button>
+                </a>
+                <button class="Retry">Retry</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="win-display">
+        <div class="win-container">
+            <h2 class="win-message">Mission<br>Success</h2>
+            <div class="winButton-container">
+                <a href="index.html">
+                    <button class="Quit">Home</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="level3-bgm" autoplay loop>
+        <source src="audio-sfx-bgm/bg3.wav" type="audio/mpeg">
+    </audio>
+
+    <script src="js-collisions/collisions-3.js"></script>
+    <script src="js-collisions/deathCollisions3.js"></script>
+    <script src="js-collisions/winCollisions3.js"></script>
+    <script src="js-classes/Sprite.js"></script>
+    <script src="js-classes/Player3.js"></script>
+    <script src="level-3.js"></script>
+</body>
+</html>

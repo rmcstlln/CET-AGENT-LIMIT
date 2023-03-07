@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+canvas{
+    height: 837.9px;
+    width: 1489.6px;
+}
+
+.fail-display{
+  display: none;
+}
+
+.game-over-container {
+  display: none;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 450px);
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-over-message {
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 70px;
+  margin-bottom: 80px;
+  font-weight: bolder;
+  font-size: 60px;
+  color: black;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Retry{
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 20px 40px;
+  margin-bottom: 80px;
+  font-weight: bolder;
+  font-size: 40px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 0.1em 0.1em gray;
+  margin: 0 40px;
+}
+
+.Quit{
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 20px 40px;
+  margin-bottom: 80px;
+  font-weight: bolder;
+  font-size: 40px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 0.1em 0.1em gray;
+  margin: 0 40px;
+}
+
+.Retry:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+.Retry:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+.Quit:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+.Quit:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.win-display{
+  display: none;
+}
+
+.win-container {
+  display: none;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 450px);
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.win-message {
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 70px 0;
+  margin-bottom: 80px;
+  font-weight: bolder;
+  font-size: 60px;
+  color: black;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+
+.winButton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Quit{
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 20px 40px;
+  margin-bottom: 80px;
+  font-weight: bolder;
+  font-size: 40px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 0.1em 0.1em gray;
+  margin: 0 40px;
+}
+
+.Quit:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+.Quit:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}

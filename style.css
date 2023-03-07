@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  cursor: crosshair;
+}
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* PLAY & EXIT BUTTON */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.btn {
+  background: lightgray;
+  font-family: 'Press Start 2P';
+  padding: 0.6em 1.3em;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em gray;
+    
+}
+.btn:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+.btn:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+
+/* MUSIC BUTTONS */
+.musicButton{
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  background: lightgray;
+  font-size: 25px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 35px;
+  box-shadow: 0.1em 0.1em gray;
+}
+.musicButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+.musicButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+
+
+
+/* TUTORIAL */
+.carousel-container{
+  width: 800px;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99999;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+
+#prevBtn{
+  position: absolute;
+  z-index: 10;
+  left: 7%;
+  bottom: 5%;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+#nextBtn{
+  position: absolute;
+  z-index: 10;
+  right: 7%;
+  bottom: 5%;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+
+#tutorial{
+  position: fixed;
+  margin-top: 10px;
+  margin-right: 10px;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  background: lightgray;
+  font-size: 30px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 35px;
+  box-shadow: 0.1em 0.1em gray;
+}
+#tutorial:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}  
+#tutorial:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+  #close-btn{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    z-index: 11;
+}
